@@ -3,6 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
+    <scm>
+        <developerConnection>scm:git:[https://github.com/kwingert94/sfg-pet-clinic/ssh]</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
@@ -32,13 +36,12 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <goal>install</goal>
                 </configuration>
             </plugin>
         </plugins>
