@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <scm>
-        <developerConnection>scm:git:[https://github.com/kwingert94/sfg-pet-clinic/ssh]</developerConnection>
+        <developerConnection>scm:git:git@github.com:kwingert94/sfg-pet-clinic.git</developerConnection>
         <tag>0.0.2</tag>
     </scm>
     <modules>
