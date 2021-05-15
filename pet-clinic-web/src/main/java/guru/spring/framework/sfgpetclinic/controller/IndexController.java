@@ -1,4 +1,4 @@
-package controllers;
+package guru.spring.framework.sfgpetclinic.controller;
 
 
 import org.springframework.stereotype.Controller;
