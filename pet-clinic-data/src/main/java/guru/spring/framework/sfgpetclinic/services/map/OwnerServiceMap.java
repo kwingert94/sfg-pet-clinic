@@ -1,10 +1,12 @@
-package guru.springframework.sfgpetclinic.services.map;
+package guru.spring.framework.sfgpetclinic.services.map;
 
+import guru.spring.framework.sfgpetclinic.services.OwnerService;
 import guru.springframework.sfgpetclinic.model.Owner;
-import guru.springframework.sfgpetclinic.services.OwnerService;
+import org.springframework.stereotype.Repository;
 
 import java.util.Set;
 
+@Repository
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override

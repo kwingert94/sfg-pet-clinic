@@ -1,4 +1,4 @@
-package guru.springframework.sfgpetclinic.services.map;
+package guru.spring.framework.sfgpetclinic.services.map;
 
 import java.util.HashMap;
 import java.util.HashSet;
