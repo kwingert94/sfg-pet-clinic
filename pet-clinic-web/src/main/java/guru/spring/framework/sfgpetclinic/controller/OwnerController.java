@@ -50,7 +50,7 @@ public class OwnerController {
         if(owner.getLastName() == null) {
             owner.setLastName(""); // empty string signifies broadest possible search
         }
-        List<Owner> results = ownerService.findByLastNameLike(owner.getLastName());
+        List<Owner> results = ownerService.findByLastNameContainingIgnoreCase(owner.getLastName().toLowerCase());
 
         if(results.isEmpty()) {
             // no owners found
